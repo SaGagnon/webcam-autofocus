@@ -2,10 +2,13 @@
   :version "0.1.0"
   :author ""
   :license ""
-  :depends-on (uiop)
+  :depends-on (uiop serapeum ltk)
   :components ((:module "src"
                 :components
-                ((:file "main"))))
+                ((:file "focus-uf")
+                 (:file "config")
+                 (:file "gui")
+                 (:file "main"))))
   :description ""
   :in-order-to ((test-op (test-op "webcam-autofocus/tests"))))
 

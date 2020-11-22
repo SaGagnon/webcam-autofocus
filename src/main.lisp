@@ -1,7 +1,13 @@
 (defpackage webcam-autofocus
-  (:use :cl))
+  (:use :cl :serapeum :focus-uf :config :gui)
+  (:export #:main))
 (in-package :webcam-autofocus)
 
-;; Exemple : (uiop:run-program "\"C:/Program Files/Mozilla Firefox/firefox.exe\"")
+(defun main ()
+  (load-config)
+  (load-state)
+  (window)
+  (save-state))
 
-
+#+nil
+(main)
